@@ -38,7 +38,7 @@ def login_start():
     element.click()
     print('SMS has been sent')
 
-    time.sleep(200)
+    time.sleep(180)
     print("Woke up")
 
     pickle.dump(driver.get_cookies(), open(f"{UserData.PHONE_NUMBER}_cookies", "wb"))

@@ -1,10 +1,10 @@
 class UserData:
-    PHONE_NUMBER = ''
+    PHONE_NUMBER = '935848455'
     ID_PASPORT = ""
-    INN = ''
-    PDF_FILE_PATH = "iman_halal_investments_2023.pdf"
-    PINFL = ""
-    INCREASE_CAPITAL_SUM = ""
+    INN = '307128450'
+    PDF_FILE_PATH = "ABSOLUTE PATH iman_halal_investments_2023.pdf"
+    PINFL = "50103036180018"
+    INCREASE_CAPITAL_SUM = "0"
 
 
 class Selectors:
@@ -19,11 +19,9 @@ class Selectors:
     """ TASK ONE """
     ADD_FILTER = '.FilterAdd_button'
     SELECT_INN = "(//div[@class='FilterAdd_itemTitle'])[7]"
-    # SELECT_INN = "//div[@class='FilterAdd_itemTitle' and text()='ИНН']"
     PRESS_ON_INN = 'div.FilterInput_buttonTitle'
     INPUT_INN = 'input#filter-input'
     THREE_POINTS = 'div.Table_content--more'
-    # CONTINUE = "//div[contains(@class, 'Dropdown_menuItemTitle')"
     CONTINUE = "//div[contains(@class, 'Dropdown_menuItemTitle') and text()='Продолжить']"
 
     # Examples:
@@ -41,7 +39,7 @@ class Selectors:
     ADD_FOUNDER = "//div[contains(@class, 'BusinessActivity_itemTitle') and text()='Добавить учредителя']"
     SELECT_INDIVIDUAL = "//div[@class='RadioList_optionTitle' and text()='Физическое лицо']"
     CONTINUE_INDIVIDUAL = "//button[@class='Button_wrapper Button_wrapper--variant-blue']/div[@class='Button_title']"
-    TYPE_OF_DOCUMENT = "//span[@class='ant-select-selection-placeholder']"
+    TYPE_OF_DOCUMENT = "//div[@class='ant-select Select_select ant-select-single ant-select-show-arrow' and @name='documentTypeId']"
     CITIZENS_PASSPORT = "//div[@title='Паспорт гражданина Рес. Узб./ИД-карта']"
     INPUT_PASSPORT_SERIES = "//input[@id='documentNumber']"
     INPUT_PINFL = "//input[@id='pin']"
